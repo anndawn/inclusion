@@ -1,4 +1,4 @@
-var margin = {top: 20, right: 30, bottom: 30, left: 40};
+var margin = {top: 20, right: 30, bottom: 30, left: 70};
 
 function drawdots(arr,divname,exname,max,txt) {
     var width = $("."+divname).width() - margin.left - margin.right,
