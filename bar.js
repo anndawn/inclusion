@@ -256,6 +256,6 @@ var margin = {
     top: 10,
     right: 0,
     bottom: 0,
-    left: 80
+    left: 90
 };
 drawbar("gergraph", data, 0.3);
