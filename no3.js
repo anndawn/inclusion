@@ -98,22 +98,22 @@ function drawdots(arr,divname,exname,max,txt) {
 
     })
 }
-var arr1 = ['Burkina', 'CPV', 'Gambia', 'Ghana', 'Guinea', "Liberia", "Niger", "Sierra", "Togo"]
+var arr1 = ['Burkina', 'Cabo_Verde', 'Gambia', 'Ghana', 'Guinea', "Liberia", "Niger", "Sierra_Leone", "Togo"]
 drawdots(arr1,"red1","ner.csv",120,"Net Enrolment Rate")
-var arr2 = ["Benin", "Cote d'Ivoire", "Mali", "Senegal"];
-var arr3 = ["Nigeria", "Guinea Bissau"];
+var arr2 = ["Benin", "Cote_d_Ivoire", "Mali", "Senegal"];
+var arr3 = ["Nigeria", "Guinea_Bissau"];
 var arr4 = ["Togo",
     "Ghana",
     "Gambia",
-    "Guinea-Bissau",
-    "Sierra Leone",
-    "Cote d'Ivoire",
+    "Guinea_Bissau",
+    "Sierra_Leone",
+    "Cote_d_Ivoire",
     "Liberia",
     "Senegal",
     "Benin",
     "Niger",
     "Guinea",
-    "Burkina Faso",
+    "Burkina_Faso",
     "Mali",
     "Nigeria"
 ]
