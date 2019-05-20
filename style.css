@@ -1,0 +1,301 @@
+.container{
+width: 100%;
+height: 830px;
+display: grid;
+grid-template-columns: 60% 1fr;
+grid-gap:20px}
+.c1{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template: repeat(8, [row] 1fr) / repeat(8, [col] 1fr);
+    grid-gap:5px;
+}
+.c2 {
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 25% 45%;
+    grid-gap: 30px;
+    display: grid;
+}
+.c3 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-gap: 5px;
+}
+.red{
+    display: grid;
+    grid-template: repeat(16, [row] 1fr) / repeat(1, [col] 1fr);
+    width: 100%;
+    height: 100%;
+    grid-gap: 10px;
+}
+.red1{
+     grid-row: row 1 / span 6;
+    grid-column: col 1 / span 1;
+
+}
+.red2{
+     grid-row: row 6 / span 4;
+    grid-column: col 1 / span 1;
+
+}
+.red3{
+    grid-row: row 9 / span 2;
+    grid-column: col 1 / span 1;
+    transform: translate(60,0)
+
+}
+.grid {
+    stroke: rgba(190, 187, 182, 0.527);
+    stroke-width: 0.5px;
+}
+.selectedgrid{
+     stroke-width: 4px;
+}
+.circle {
+    opacity: 0.5
+}
+
+.tooltip {
+    position: absolute;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    background-color: white;
+}
+.map{
+    grid-column: col 3 / span 6;
+    grid-row: row 4 / span 3;
+    z-index: 1;
+    padding-top: 20px;
+    position: relative
+}
+.mapwrapper{
+    /* transform: translate(0,120); */
+    position: absolute;
+    top:0
+}
+.noosc{
+       grid-column: col 1 / span 3;
+       grid-row: row 1 / span 3;
+       /* margin-top: 20px; */
+       position:relative
+}
+.noosc p{
+    padding-bottom: 0;
+    position:absolute;
+    top:0;
+    left:30%
+}
+.ooscc{
+     grid-column: col 1 / span 6;
+     grid-row: row 3 / span 3;
+     position: relative;
+     transform: translate(0, 120px)
+}
+.ooscc .rate,.ooscc .number{
+    transform: translate(0, 60px)
+}
+.ger {
+    text-align: center;
+    grid-column: col 5 / span 4;
+    grid-row: row 1 / span 3;
+    /* margin-top: 50px; */
+    /* margin-left: 10px; */
+}
+#svg2{
+     width: 100%;
+     height: 100%;
+  
+}
+
+.bar {
+    fill: #aed136;
+}
+
+
+.lineselected{
+    stroke: #9c81b4;
+    stroke-width: 3pt;
+    transition-property: style;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+.ooscc .txt{font-size: 8pt; }
+.number .txt {
+    font-size: 8pt;
+    stroke: black;
+    font-weight: 200
+}
+.ooscc .bar{ fill: rgb(24, 161, 205)}
+.ooscc div{
+    transform:translate(0,50px)
+}
+.oosc p {position: absolute;z-index: 3; top:0}
+.barboard .selected {
+    fill: #9c81b4;
+    transition-property: fill;
+    transition-duration: .7s;
+    transition-timing-function: linear;
+    transition-delay: 0.3s;
+}
+.rate, .number{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top:20px
+}
+.rate{
+display:"none";
+opacity: 0;
+}
+.gergraph{
+    height: 100%;
+}
+.gergraph .domain{
+    opacity:0
+}
+.gergraph .txt {
+    font-size: 12pt;
+    /* transform: translate(50,0) */
+}
+.noosc .txt {
+    font-size: 12px;
+}
+
+.noosc .xAxis path {
+    opacity: 0
+}
+.gertitle{}
+.ses{
+    height:400px;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(1, [row] 1fr) / repeat(4, [col] 1fr);
+    grid-gap: 10px;
+    padding-top: 40px;
+}
+.dotw{
+        grid-column: col 1 / span 1;
+        grid-row: row 1 / span 1;
+}
+.wheelw{
+    grid-column: col 2 / span 1;
+    grid-row: row 1 / span 1;
+}
+.dotl{
+     grid-column: col 3 / span 1;
+     grid-row: row 1 / span 1;
+}
+.wheell {
+    grid-column: col 4 / span 1;
+    grid-row: row 1 / span 1;
+}
+.connection {
+    stroke: rgba(226, 138, 253, 0.527);
+    stroke-width: 2px;
+    stroke-linecap: "round"
+}
+
+.circle {
+    opacity: 0.5
+}
+
+.tooltip {
+    position: absolute;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    background-color: white;
+}
+
+
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+/* .bar {
+    fill: orange;
+} */
+
+.solidArc:hover,
+.outlineArc:hover {
+    fill: blanchedalmond;
+}
+
+.solidArc {
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0.7;
+}
+
+.outlineArc {
+    opacity: 1;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.aster-score {
+    line-height: 1;
+    font-weight: bold;
+    font-size: 500%;
+}
+
+.d3-tip {
+    line-height: 3;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 12px;
+    background: #9dceff;
+    opacity: 0.7;
+    color: #000;
+    border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+/* .d3-tip:after {
+box-sizing: border-box;
+display: inline;
+font-size: 10px;
+width: 100%;
+line-height: 1;
+color: rgba(0, 0, 0, 0.8);
+content: "\25BC";
+position: absolute;
+text-align: center;
+} */
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+.lower{
+    position: relative;
+    
+}
+.lower span:first-child{ position: absolute;left: 20%;font-size: 30px}
+.lower span:nth-child(2) {
+    position: absolute;
+    right: 20%;
+    font-size: 30px
+}

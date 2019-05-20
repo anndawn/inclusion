@@ -1,0 +1,29 @@
+type,id,label,Time,score,weight,Gap
+rural,LBR,Liberia,2013,30.69187,1,1.69
+rural,NER,Niger,2012,44.56001,1,1.85
+rural,BFA,Burkina Faso,2010,45.36073,1,1.82
+rural,MLI,Mali,2015,45.5074,1,1.83
+rural,SEN,Senegal,2017,50.60051,1,1.64
+rural,GIN,Guinea,2016,51.96732,1,1.63
+rural,GNB,Guinea-Bissau,2014,52.98809,1,1.4
+rural,NGA,Nigeria,2016,55.94436,1,1.53
+rural,GMB,Gambia,2013,62.55949,1,1.27
+rural,GHA,Ghana,2015,65.45966,1,1.15
+rural,BEN,Benin,2014,67.91212,1,1.24
+rural,CIV,C“te d'Ivoire,2016,71.14082,1,1.2
+rural,SLE,Sierra Leone,2017,75.23619,1,1.21
+rural,TGO,Togo,2014,84.92356,1,1.13
+urban,LBR,Liberia,2013,52.00813,1,1.69
+urban,NER,Niger,2012,82.62074,1,1.85
+urban,BFA,Burkina Faso,2010,82.64366,1,1.82
+urban,MLI,Mali,2015,83.33636,1,1.83
+urban,SEN,Senegal,2017,82.76714,1,1.64
+urban,GIN,Guinea,2016,84.67612,1,1.63
+urban,GNB,Guinea-Bissau,2014,74.20341,1,1.4
+urban,NGA,Nigeria,2016,85.48103,1,1.53
+urban,GMB,Gambia,2013,79.48401,1,1.27
+urban,GHA,Ghana,2015,75.0605,1,1.15
+urban,BEN,Benin,2014,84.21981,1,1.24
+urban,CIV,C“te d'Ivoire,2016,85.32386,1,1.2
+urban,SLE,Sierra Leone,2017,90.83573,1,1.21
+urban,TGO,Togo,2014,96.06449,1,1.13
