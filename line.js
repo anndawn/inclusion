@@ -11,7 +11,7 @@ var lsvg = d3.select(".noosc")
             .append("g")
             .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
-var tooltip = d3.select(".noosc").append("div")
+var tooltip2 = d3.select(".noosc").append("div")
                 .attr("class", "tooltip")
                 .style("opacity", 0);
 
@@ -48,8 +48,8 @@ var tipMouseover = function(d) {
         var colors = color(d.Species);
         var html = "<span style='color:" + colors + ";'>" + d.Region + "</span><br />" +
         "<b>" + d.Value + "</b>";
-
-        tooltip.html(html)
+        console.log(html);
+        tooltip2.html(html)
         .style("left", (d3.event.pageX + 15) + "px")
         .style("top", (d3.event.pageY - 28) + "px")
         .transition()
@@ -59,7 +59,7 @@ var tipMouseover = function(d) {
 };
 // tooltip mouseout event handler
 var tipMouseout = function(d) {
-                    tooltip.transition()
+                    tooltip2.transition()
                     .duration(300) // ms
                     .style("opacity", 0); // don't care about position!
                     };

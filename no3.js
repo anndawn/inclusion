@@ -94,7 +94,7 @@ function drawdots(arr,divname,exname,max,txt) {
             .on("mouseover", tipMouseover)
             .on("mouseout", tipMouseout);
         d3.select("."+divname).select("svg").append("text").text(txt)
-            .attr("class", "title").attr("transform", "translate(" + (width+50) + ",10) rotate(90) ")
+            .attr("class", "title").attr("transform", "translate(" + (width+70) + ",10) rotate(90) ")
 
     })
 }

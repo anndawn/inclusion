@@ -52,13 +52,12 @@ var color = d3.scaleOrdinal()
 var tipMouseover = function(d) {
         var colors = color(d.type);
         console.log(d);
-        var html = d.label + "<br />" +
-        "<span style='color:" + colors + ";'>" + d.Time +" "+d.type+"</span><br />" +
+        var html = d.label + "<br />"  + d.Time +d.type+"<br />" +
         "<b>" + d.score + "%</b>";
 
         tooltip.html(html)
         .style("left", (d3.event.pageX + 15) + "px")
-        .style("top", (d3.event.pageY - 28) + "px")
+        .style("top", (d3.event.pageY - 830) + "px")
         .transition()
         .duration(200) // ms
         .style("opacity", .9) // started as 0!
@@ -67,12 +66,12 @@ var tipMouseover = function(d) {
 var tipMouseover2 = function(d) {
 var colors = color(d.type);
 console.log(d);
-var html = d.key +" " +d.values[0].time +"<br /><span style='color: rgba(226, 138, 253, 0.527)'>Gap:</span><b>" +
+var html = d.key +"<br />Gap:<b>" +
 d.values[0].gap + "%</b>";
 
 tooltip.html(html)
 .style("left", (d3.event.pageX + 15) + "px")
-.style("top", (d3.event.pageY - 28) + "px")
+.style("top", (d3.event.pageY - 830) + "px")
 .transition()
 .duration(200) // ms
 .style("opacity", .9) // started as 0!

@@ -30,19 +30,14 @@ grid-gap:20px}
     width: 100%;
     height: 100%;
     grid-gap: 10px;
-    font-size:8px!important;
-    position:relative;
+    /* position: relative; */
 }
 .red div{
     padding-top: 20px;
 }
-.red p{
-position: "absolute";
-    top:0
-}
 .red1{
      grid-row: row 1 / span 6;
-    grid-column: col 1 / span 1;
+     grid-column: col 1 / span 1;
 
 }
 .red2{
@@ -69,9 +64,10 @@ position: "absolute";
 
 .tooltip {
     position: absolute;
-    font-size: 12px;
-    width: auto;
-    height: auto;
+    font-size: 14px;
+    font-weight:500;
+    width: 80px;
+    height: 40px;
     pointer-events: none;
     background-color: white;
 }
@@ -137,7 +133,7 @@ position: "absolute";
 
 .ooscc .txt{font-size: 8pt; }
 .number .txt {
-    font-size: 8pt !important;
+    font-size: 8pt;
     stroke: black;
     font-weight: 200
 }
@@ -215,14 +211,6 @@ opacity: 0;
     opacity: 0.5
 }
 
-.tooltip {
-    position: absolute;
-    font-size: 12px;
-    width: auto;
-    height: auto;
-    pointer-events: none;
-    background-color: white;
-}
 
 
 
@@ -300,7 +288,6 @@ text-align: center;
 }
 .lower{
     position: relative;
-    
 }
 .lower span:first-child{ position: absolute;left: 20%;font-size: 30px}
 .lower span:nth-child(2) {
@@ -308,4 +295,8 @@ text-align: center;
     right: 20%;
     font-size: 30px
 }
-text{font-size:8pt}
+
+.red p{
+    position: absolute;
+    top:0
+}
